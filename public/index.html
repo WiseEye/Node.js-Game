@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" constent="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="styles.css">
+ <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<title>Socket Shooter</title>
+
+<body>
+    <div id="name-container">
+        <input id="name-entry" type="text" placeholder="Enter your name...">
+        <button id = "name-submit" type="button" class="btn btn-primary">Submit</button>
+    </div>
+
+    <div id="chat-container">
+        <div id="chat">
+            <div id="chat-info">
+                <div class="panel panel-primary">
+                <div class="panel-heading">Lobby</div>
+                <div class="panel-body">Players</div>
+                <br>
+                <ul id="con-players"></ul>
+                </div>
+
+            </div>
+            <div id=display-name></div>
+            <div id="chat-window">
+                <div id="chat-output"></div>
+            </div>
+            <input id="chat-box" type="text" placeholder="Enter your message...">
+            <button id = "chat-send" type="button" class="btn btn-primary">Send</button>
+            <button id = "ready-up" type="button" class="btn btn-primary">Ready Up</button>
+            <br>
+        </div>
+    </div>
+    
+    <div id="canvas-container">
+        <canvas id="canvas"></canvas>>
+    </div>
+    <br>
+    <div> 
+        <button id = "p1" type="button" class="btn btn-primary">Player 1</button>
+        <button id = "p2" type="button" class="btn btn-primary">Player 2</button>
+    </div>
+
+
+
+    <script src="socket.io.js"></script>
+    <script src="game.js"></script>
+</body>
+</html>
